@@ -34,6 +34,12 @@ header{
   margin: 0 auto;
 }
 
+footer{
+  max-width: 1800px;
+  height:70px;
+  margin: 0 auto;
+}
+
 header .nav{
   display: flex;
   flex-direction: row;
@@ -41,5 +47,13 @@ header .nav{
 
 .container .content{
   background: aquamarine;
-  height: 400px;
+  height: 90vh;
 }
+
+.container.about{
+ height: 100vh;
+}
+
+.container.interview{
+  height: 100vh;
+ }

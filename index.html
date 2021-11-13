@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>취향제일</title>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.css">
   <!-- <link rel="stylesheet" href="owl.carousel.min.css">
   <link rel="stylesheet" href="owl.theme.default.min.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body>
   <header>
@@ -17,19 +17,19 @@
       로고
     </div>
     <div class="nav">
-      <div class="introduce">
+      <div class="nav_about">
         About us
       </div>
-      <div class="interview">
+      <div class="nav_interview">
         INTERVIEWS
       </div>
-      <div class="menu_btn">
+      <div class="nav_menu_btn">
         =
       </div>
     </div>
   </header>
-  <div class="container">
-    <div class="owl-carousel">
+  <div class="container carousel">
+    <div class="owl-carousel owl-theme">
       <div class="content"> content1</div>
       <div class="content"> content2</div>
       <div class="content"> content3</div>
@@ -39,8 +39,11 @@
       <div class="content"> content7</div>
       </div>
   </div>
-  <div>
-    취향제일 테스트
+  <div class="container about">
+    about
+  </div>
+  <div class="container interview">
+    interview
   </div>
   <footer>푸터 </footer>
 
@@ -49,22 +52,27 @@
   <script>
     $(document).ready(function(){
       $(".owl-carousel").owlCarousel({
+        items:1,
         loop:true,
         margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            1000:{
-                items:3
-            },
-            2000:{
-                items:5
-            }
-        }
+        autoplay:true,
+        autoplayTimeout:10000,
       });
     });
+    const navAbout = document.getElementsByClassName('nav_about');
+    const navInterview = document.getElementsByClassName('nav_interview');
+    const containerAbout = document.getElementsByClassName('about');
+    const containerInterview = document.getElementsByClassName('interview');
+
+    console.log(navAbout[0])
+    navAbout[0].addEventListener('click', () => {
+      console.log('clicked')
+      window.scrollBy({top: containerAbout[0].getBoundingClientRect().top, behavior:'smooth'});
+    })
+    navInterview[0].addEventListener('click', () =>{
+      window.scrollBy({top: containerInterview[0].getBoundingClientRect().top, behavior:'smooth'});
+    })
+
   </script>
 </body>
 </html>
