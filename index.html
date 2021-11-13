@@ -5,10 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>취향제일</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <!-- <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body>
+  <header>
+    <div class="logo">
+      로고
+    </div>
+    <div class="nav">
+      <div class="introduce">
+        About us
+      </div>
+      <div class="interview">
+        INTERVIEWS
+      </div>
+      <div class="menu_btn">
+        =
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="owl-carousel">
+      <div class="content"> content1</div>
+      <div class="content"> content2</div>
+      <div class="content"> content3</div>
+      <div class="content"> content4</div>
+      <div class="content"> content5</div>
+      <div class="content"> content6</div>
+      <div class="content"> content7</div>
+      </div>
+  </div>
   <div>
     취향제일 테스트
   </div>
+  <footer>푸터 </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            1000:{
+                items:3
+            },
+            2000:{
+                items:5
+            }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
