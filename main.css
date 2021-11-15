@@ -26,34 +26,305 @@ a {
 }
 
 header{
-  max-width: 1800px;
+  position: absolute;
+  max-width: 1920px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height:70px;
-  margin: 0 auto;
-}
-
-footer{
-  max-width: 1800px;
-  height:70px;
-  margin: 0 auto;
+  z-index: 10;
+  
 }
 
 header .nav{
+  position: relative;
+  width: 427.5px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Quicksand-Light';
+  font-size: 22px;
+  color:#fff;
+}
+
+header .nav .nav_about,
+header .nav .nav_interview
+{
+  width: 122.5px;
+  margin-right: 30px;
+  
+  cursor: pointer;
+}
+header .nav .nav_menu_btn{
+  position: absolute;
+  right:0;
+  /* background-color: white; */
+}
+
+.container .content{
+  background: black;
+  height: 1080px;
+  color: white;
+}
+
+.container .content .desc_main_1{
+  font-family: 'NotoSerifKR-Regular';
+  position: absolute;
+  max-width: 1920px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0 60px;
+  font-size: 80px;
+  line-height: 90px;
+  top: 640px;
+}
+
+.container .content .more_main_1{
+  
+  font-size: 20px;
+  line-height: 24px;
+  position: absolute;
+  max-width: 1920px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0 60px;
+  bottom: 60px;
+  color: white;
+}
+
+.container .content .more_main_1 .more_btn{
+  font-family: 'Quicksand-Regular';
+  line-height: 60px;
+  width: 580px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: #fff 0.5px solid;
+  
+}
+
+.container.about{
+  position:relative;
+  height: 1080px;
+  max-width: 1920px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container.about .header_about{
+  border-top: black 0.5px solid;
+  font-family: 'Quicksand-Regular';
+  font-size: 20px;
+  line-height: 24px;
+  width:100%;
+  padding: 26px 0 30px 0;
+}
+
+.container.about .title_about{
+  font-family: 'NotoSerifKR-Regular';
+  font-size: 50px;
+  line-height: 60px;
+  padding-bottom:30px;
+}
+
+.container.about .desc_about{
+  font-family: 'NotoSerifKR-Regular';
+  font-size: 35px;
+  line-height: 50px;
+  width: 1495px;
+  text-align: justify;
+}
+
+.container.about .desc_about .bold{
+  font-family: 'NotoSerifKR-Bold';
+}
+
+.container.about .more_about{
+  width:885px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  line-height: 0;
+  align-items: flex-end;
+  padding: 0 60px 60px 60px;
+}
+
+.container.about .more_about .info{
   display: flex;
   flex-direction: row;
 }
 
-.container .content{
-  background: aquamarine;
-  height: 90vh;
+.container.about .more_about .left{
+  font-family: 'NotoSerifKR-Bold';
+  font-size: 28px;
+  line-height: 33.6px;
+  width: 275px;
+  min-width: 275px;
+  margin-right:30px;
 }
 
-.container.about{
- height: 100vh;
+.container.about .more_about .right{
+  font-family: 'NotoSerifKR-Regular';
+  font-size: 18px;
+  line-height: 21.6px;
+  width: 580px;
 }
+
+.container.about .more_about .right .bold{
+  font-family: 'NotoSerifKR-Bold';
+}
+
+.container.about .more_about .more_about_btn{
+  font-family: 'Quicksand-Regular';
+  line-height: 60px;
+  width: 885px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: black 0.5px solid;
+}
+
 
 .container.interview{
-  height: 100vh;
+  position:relative;
+  height: 2155px;
+  max-width: 1920px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: #fff;
+}
+
+.container.interview .header_interview{
+  border-bottom: white 0.5px solid;
+  font-family: 'NotoSerifKR-Regular';
+  font-size: 20px;
+  line-height: 24px;
+  width:100%;
+  padding: 15px 0 30px 0;
  }
+
+.container.interview .interview_items .row{
+   display: flex;
+}
+
+.container.interview .interview_items .row .col{
+  width: 427.5px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container.interview .interview_items .row .col:first-child{
+  margin-top: 240px;
+}
+.container.interview .interview_items .row .col:nth-child(2){
+  margin-top: 60px;
+}
+.container.interview .interview_items .row .col:nth-child(3){
+  margin-top: 120px;
+}
+
+.container.interview .interview_items .row .col:last-child{
+  margin: 180px 0 0 0;
+}
+.container.interview .interview_items .row .col .item{
+  position: relative;
+  display: flex;
+  font-size: 38px;
+  line-height: 45.6px;
+  padding: 30px;
+  flex-direction: column;
+  border-radius: 15px;
+  border: white solid 0.5px;
+  height: 600px;
+  margin-bottom: 30px;
+  font-family: 'NotoSerifKR-Bold';
+  justify-content: space-between;
+}
+
+.container.interview .interview_items .row .col img{
+  margin-bottom: 30px;
+}
+
+.container.interview .interview_items .row .col .item .view{
+  font-size:22px;
+  line-height: 26.4px;
+}
+
+.container.interview .interview_items .row .col .item .arrow{
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.container.interview .footer_interview{
+  font-size: 20px;
+  line-height: 24px;
+  position: absolute;
+  width: 580px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0 60px;
+  bottom: 120px;
+  color: white;
+}
+.container.interview .footer_interview .more_btn{
+  font-family: 'NotoSerifKR-Bold';
+  line-height: 60px;
+  width: 580px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: #fff 0.5px solid;
+}
+
+footer{
+  position:relative;
+  height: 720px;
+  max-width: 1920px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .title_footer{
+  border-top: black 0.5px solid;
+  font-family: 'Quicksand-Regular';
+  font-size: 20px;
+  line-height: 24px;
+  width:100%;
+  padding: 26px 0 30px 0;
+}
+
