@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('MinionPro-Regular.woff2') format('woff2'),
+        url('MinionPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSerifKR-Regular';
+    src: url('NotoSerifKR-Regular.woff2') format('woff2'),
+        url('NotoSerifKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSerifKR-SemiBold';
+    src: url('NotoSerifKR-SemiBold.woff2') format('woff2'),
+        url('NotoSerifKR-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSerifKR-Bold';
+    src: url('NotoSerifKR-Bold.woff2') format('woff2'),
+        url('NotoSerifKR-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
