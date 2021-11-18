@@ -55,12 +55,12 @@ header .nav .nav_interview
 {
   width: 122.5px;
   margin-right: 30px;
-  
   cursor: pointer;
 }
 header .nav .nav_menu_btn{
   position: absolute;
   right:0;
+  cursor: pointer;
   /* background-color: white; */
 }
 
@@ -81,7 +81,7 @@ header .nav .nav_menu_btn{
   padding: 0 60px;
   font-size: 80px;
   line-height: 90px;
-  top: 640px;
+  bottom: 150px;
 }
 
 .container .content .more_main_1{
@@ -144,7 +144,7 @@ header .nav .nav_menu_btn{
   font-family: 'NotoSerifKR-Regular';
   font-size: 35px;
   line-height: 50px;
-  width: 1495px;
+  width: 83%;
   text-align: justify;
 }
 
@@ -170,26 +170,31 @@ header .nav .nav_menu_btn{
 
 .container.about .more_about .info{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.container.about .more_about .left{
+.container.about .more_about .intro{
   font-family: 'NotoSerifKR-Bold';
   font-size: 28px;
   line-height: 33.6px;
-  width: 275px;
-  min-width: 275px;
-  margin-right:30px;
+  width: 885px;
+  /* width: 275px; */
+  /* min-width: 275px; */
+  /* margin-right:30px; */
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: black 0.5px solid;
 }
 
-.container.about .more_about .right{
+.container.about .more_about .desc{
   font-family: 'NotoSerifKR-Regular';
-  font-size: 18px;
-  line-height: 21.6px;
-  width: 580px;
+  font-size: 20px;
+  line-height: 30px;
+  /* width: 580px; */
+  width: 885px;
 }
 
-.container.about .more_about .right .bold{
+.container.about .more_about .desc .bold{
   font-family: 'NotoSerifKR-Bold';
 }
 
@@ -281,6 +286,9 @@ header .nav .nav_menu_btn{
   position: absolute;
   right: 30px;
   bottom: 30px;
+}
+.container.interview .interview_items .row .col .item .arrow img{
+  margin: 0;
 }
 
 .container.interview .footer_interview{
