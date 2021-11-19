@@ -5,7 +5,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  min-height: 100%
+  min-height: 100%;
+  background:black;
 }
 
 #root {
@@ -65,7 +66,7 @@ header .nav .nav_menu_btn{
 }
 
 .container .content{
-  background: black;
+  /* background: black; */
   height: 1080px;
   color: white;
 }
@@ -108,7 +109,7 @@ header .nav .nav_menu_btn{
   justify-content: space-between;
   cursor: pointer;
   border-bottom: #fff 0.5px solid;
-  
+  align-items: center;
 }
 
 .container.about{
@@ -138,6 +139,10 @@ header .nav .nav_menu_btn{
   font-size: 50px;
   line-height: 60px;
   padding-bottom:30px;
+
+  transform: translate3d(0,5rem,0);
+  opacity: 0;
+  transition: 0.75s;
 }
 
 .container.about .desc_about{
@@ -146,6 +151,10 @@ header .nav .nav_menu_btn{
   line-height: 50px;
   width: 83%;
   text-align: justify;
+
+  transform: translate3d(0,5rem,0);
+  opacity: 0;
+  transition: 0.75s;
 }
 
 .container.about .desc_about .bold{
@@ -184,14 +193,22 @@ header .nav .nav_menu_btn{
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: black 0.5px solid;
+
+  transform: translate3d(0,5rem,0);
+  opacity: 0;
+  transition: 0.75s;
 }
 
-.container.about .more_about .desc{
+.container.about .more_about .members{
   font-family: 'NotoSerifKR-Regular';
   font-size: 20px;
   line-height: 30px;
   /* width: 580px; */
   width: 885px;
+
+  transform: translate3d(0,5rem,0);
+  opacity: 0;
+  transition: 0.75s;
 }
 
 .container.about .more_about .desc .bold{
@@ -221,7 +238,7 @@ header .nav .nav_menu_btn{
   padding: 60px;
   display: flex;
   flex-direction: column;
-  background-color: black;
+  /* background-color: black; */
   color: #fff;
 }
 
@@ -273,6 +290,96 @@ header .nav .nav_menu_btn{
   justify-content: space-between;
 }
 
+
+.container.interview .interview_items .row .col .item .hidden{
+  display: none;
+  color: black;
+}
+
+.container.interview .interview_items .row .col .item:hover .subject{
+  display: none;
+}
+
+.container.interview .interview_items .row .col .item:hover .hidden{
+  display: inline-block;
+  word-break: inherit;
+}
+
+
+.container.interview .interview_items .row .col .item:hover{
+  border:0;
+  background:white;
+}
+
+.container.interview .interview_items .row .col .item.item1:hover{
+  background: #fafa64;
+}
+
+.container.interview .interview_items .row .col .item.item2:hover{
+  background: #8cfa64;
+}
+
+.container.interview .interview_items .row .col .item.item3:hover{
+  background: #c882fa;
+}
+
+.container.interview .interview_items .row .col .item.item4:hover{
+  background: #f06e5a;
+}
+
+.container.interview .interview_items .row .col .item.item5:hover{
+  background: #faa032;
+}
+
+.container.interview .interview_items .row .col .item.item6:hover{
+  background: #82ffb4;
+}
+
+.container.interview .interview_items .row .col .item.item7:hover{
+  background: #78b4fa;
+}
+
+.container.interview .interview_items .row .col .item:hover .view{
+  color:black;
+}
+
+.container.interview .interview_items .row .col .item:hover .arrow .arrow_black{
+  display: inline-block;
+}
+.container.interview .interview_items .row .col .item:hover .arrow .arrow_white{
+  display: none;
+}
+
+.container.interview .interview_items .row .col .work_icon{
+  /* animation: tilt 3s ease-in-out; */
+  transform-origin: 50% 50%;
+  /* transform: rotate(15deg); */
+  /* animation-duration: 3s; */
+}
+
+.container.interview .interview_items .row .col .sponsor_icon{
+  animation: rotate_image 10s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image{
+	100% {
+    	transform: rotate(360deg);
+    }
+}
+
+@keyframes tilt {
+	50% {transform: rotate(5deg);}
+	100% {transform: rotate(0deg)}
+}
+
+@keyframes tilt-2 {
+	50% {transform: rotate(-5deg);}
+	100% {transform: rotate(0deg)}
+}
+
+
+
 .container.interview .interview_items .row .col img{
   margin-bottom: 30px;
   width:100%;
@@ -290,6 +397,10 @@ header .nav .nav_menu_btn{
 }
 .container.interview .interview_items .row .col .item .arrow img{
   margin: 0;
+}
+
+.container.interview .interview_items .row .col .item .arrow .arrow_black{
+  display: none;
 }
 
 .container.interview .footer_interview{
