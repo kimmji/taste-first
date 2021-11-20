@@ -383,6 +383,12 @@
     $(document).ready(function(){ 
       $(window).scroll(function(){ 
         console.log($(window).scrollTop())
+        if($(window).scrollTop() < 246){
+          $('.title_about').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
+          $('.desc_about').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
+          $('.intro').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
+          $('.members').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
+        }
         if($(window).scrollTop() >= 246){
           $('.title_about').css("opacity", 1).css("transform","translateZ(0)");
         }
