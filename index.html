@@ -382,7 +382,7 @@
 
     $(document).ready(function(){ 
       $(window).scroll(function(){ 
-        // console.log($(window).scrollTop())
+        console.log($(window).scrollTop())
         if($(window).scrollTop() >= 246){
           $('.title_about').css("opacity", 1).css("transform","translateZ(0)");
         }
@@ -395,6 +395,13 @@
         if($(window).scrollTop() >= 950){
           $('.members').css("opacity", 1).css("transform","translateZ(0)");
         }
+        if($(window).scrollTop() >= 1280){
+          console.log(240-(($(window).scrollTop()-1280) /800)*100)
+          $('.interview_items .row .col:first-child').css('margin-top',240-(($(window).scrollTop()-1280) /800)*100)
+          $('.interview_items .row .col:nth-child(3)').css('margin-top',240-(($(window).scrollTop()-1280) /1200)*100)
+          $('.interview_items .row .col:nth-child(4)').css('margin-top',240-(($(window).scrollTop()-1280) /600)*100)
+
+        }
       }) 
     }) 
 
@@ -405,7 +412,7 @@
       let _documentY = document.documentElement.scrollTop;
       let _direction = _documentY - window.__scrollPosition >= 0 ? 1 : -1;
       let isMoving
-      console.log(_direction); // 콘솔창에 스크롤 방향을 출력
+      // console.log(_direction); // 콘솔창에 스크롤 방향을 출력
       if(_direction === 1){
         
         $('.work_icon').css("animation", 'tilt 1s linear')
