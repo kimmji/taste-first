@@ -67,8 +67,14 @@ header .nav .nav_menu_btn{
 
 .container .content{
   /* background: black; */
-  height: 1080px;
+  height: 100vh;
+  width: 100%;
   color: white;
+  background:url('./assets/images/main1.jpg');
+  /* object-fit: cover; */
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .container .content .desc_main_1{
@@ -114,7 +120,7 @@ header .nav .nav_menu_btn{
 
 .container.about{
   position:relative;
-  height: 1080px;
+  height: 100vh;
   max-width: 1920px;
   width: 100%;
   left: 0;

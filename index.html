@@ -81,7 +81,7 @@
   <div class="container carousel">
     <div class="owl-carousel owl-theme">
       <div class="content"> 
-        <img src='./assets/images/main1.jpg'/>
+        <!-- <img src='./assets/images/main1.jpg'/> -->
         <div class="desc_main_1">
             “취향은 정확하게 설명하기 어렵죠. <br/>
             나는 이게 좋은데 넌 안 좋아? 이렇게 밖에<br/>
@@ -348,7 +348,7 @@
         items:1,
         loop:true,
         margin:10,
-        autoplay:true,
+        // autoplay:true,
         autoplayTimeout:5000,
       });
     });
@@ -356,6 +356,8 @@
     const navInterview = document.getElementsByClassName('nav_interview');
     const containerAbout = document.getElementsByClassName('about');
     const containerInterview = document.getElementsByClassName('interview');
+
+    let height = window.innerHeight
 
     navAbout[0].addEventListener('click', () => {
       window.scrollBy({top: containerAbout[0].getBoundingClientRect().top, behavior:'smooth'});
@@ -368,12 +370,12 @@
     //배경색 변경
     $(document).ready(function(){ 
       $(window).scroll(function(){ 
-        if($(window).scrollTop()<= 1080){
-          $('.content img').css("opacity", 1 - $(window).scrollTop() / 1080 )
-          $('body').css("background", `rgb(0,0,0,${1 - $(window).scrollTop() / 1080})` )
+        if($(window).scrollTop() <= height){
+          $('.content img').css("opacity", 1 - $(window).scrollTop() / height )
+          $('body').css("background", `rgb(0,0,0,${1 - $(window).scrollTop() / height})` )
 
-        }else if($(window).scrollTop()>1080 && $(window).scrollTop()<3235){
-          $('body').css("background", `rgb(0,0,0,${($(window).scrollTop()-1080) / 1080})` )
+        }else if($(window).scrollTop()>height && $(window).scrollTop()<3235){
+          $('body').css("background", `rgb(0,0,0,${($(window).scrollTop()-height) / height})` )
         }else{
           $('body').css("background", `rgb(0,0,0,${1 - ($(window).scrollTop()-3235) /617})` )
         }
@@ -382,30 +384,31 @@
 
     $(document).ready(function(){ 
       $(window).scroll(function(){ 
-        console.log($(window).scrollTop())
-        if($(window).scrollTop() < 246){
+        // console.log($(window).scrollTop())
+        console.log(window.innerHeight)
+        if($(window).scrollTop() < height/5){
           $('.title_about').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
           $('.desc_about').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
           $('.intro').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
           $('.members').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
         }
-        if($(window).scrollTop() >= 246){
+        if($(window).scrollTop() >= height/5){
           $('.title_about').css("opacity", 1).css("transform","translateZ(0)");
         }
-        if($(window).scrollTop() >= 400){
+        if($(window).scrollTop() >= height*2/5){
           $('.desc_about').css("opacity", 1).css("transform","translateZ(0)");
         }
-        if($(window).scrollTop() >= 850){
+        if($(window).scrollTop() >= height*4/5){
           $('.intro').css("opacity", 1).css("transform","translateZ(0)");
         }
-        if($(window).scrollTop() >= 950){
+        if($(window).scrollTop() >= height){
           $('.members').css("opacity", 1).css("transform","translateZ(0)");
         }
-        if($(window).scrollTop() >= 1280){
-          console.log(240-(($(window).scrollTop()-1280) /800)*100)
-          $('.interview_items .row .col:first-child').css('margin-top',240-(($(window).scrollTop()-1280) /600)*100)
-          $('.interview_items .row .col:nth-child(3)').css('margin-top',120-(($(window).scrollTop()-1280) /1800)*100)
-          $('.interview_items .row .col:nth-child(4)').css('margin-top',180-(($(window).scrollTop()-1280) /1000)*100)
+        if($(window).scrollTop() >= height+200){
+          console.log(240-(($(window).scrollTop()-(height+200)) /800)*100)
+          $('.interview_items .row .col:first-child').css('margin-top',240-(($(window).scrollTop()-(height+200)) /600)*100)
+          $('.interview_items .row .col:nth-child(3)').css('margin-top',120-(($(window).scrollTop()-(height+200)) /1800)*100)
+          $('.interview_items .row .col:nth-child(4)').css('margin-top',180-(($(window).scrollTop()-(height+200)) /1000)*100)
 
         }
       }) 
@@ -434,30 +437,6 @@
       window.__scrollPosition = _documentY; // Update scrollY
     });
     
-
-
-    const body = document.querySelector("body");
-    // const headerHeight = header.getBoundingClientRect().height;
-    
-    // window.addEventListener("scroll", () => {
-    //   console.log(window.scrollY)
-    //       if (window.scrollY > 1080) {
-    //       body.setAttribute("style", "background: white;");
-    //   } else {
-          
-    //     // body.setAttribute("style", "background: transparent;");
-    //   }
-    // });
-
-//     $(document).ready(function(){ 
-
-// $(window).scroll(function(){ 
-
-//     $('body').css("opacity", 0 + $(window).scrollTop() / 800) 
-
-// }) 
-
-// }) 
     
 
   </script>
