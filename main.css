@@ -73,15 +73,55 @@ header .nav .nav_menu_btn{
   height: 100vh;
   width: 100%;
   color: white;
-  background:url('./assets/images/main1.jpg');
+  /* background:url('./assets/images/main1.jpg'); */
   /* object-fit: cover; */
   min-height: 100%;
   background-position: center;
   background-size: cover;
 }
 
-.container .content .desc_main_1{
-  font-family: 'NotoSerifKR-Regular';
+.container .content.main1{ 
+  background:url('./assets/images/main1.jpg');
+  background-position: center;
+  background-size: cover;
+  }
+.container .content.main2{ 
+  background:url('./assets/images/main2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-position-y: 30%;
+  }
+.container .content.main3{ 
+  background:url('./assets/images/main3.jpg');
+  background-position: center;
+  background-size: cover;
+  }
+.container .content.main4{ 
+  background:url('./assets/images/main4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-position-y: 20%;
+  }
+.container .content.main5{ 
+  background:url('./assets/images/main5.jpg');
+  background-position: center;
+  background-size: cover;
+  background-position-y: 60%;
+  }
+.container .content.main6{ 
+  background:url('./assets/images/main6.jpg');
+  background-position: center;
+  background-size: cover;
+  }
+.container .content.main7{ 
+  background:url('./assets/images/main7.jpg');
+  background-position: center;
+  background-size: cover;
+  background-position-y: 30%;
+  }
+
+.container .content .desc_main{
+  font-family: 'NotoSerifKR-Bold';
   position: absolute;
   max-width: 1920px;
   width: 100%;
@@ -94,7 +134,7 @@ header .nav .nav_menu_btn{
   bottom: 150px;
 }
 
-.container .content .more_main_1{
+.container .content .more_main{
   
   font-size: 20px;
   line-height: 24px;
@@ -109,7 +149,7 @@ header .nav .nav_menu_btn{
   color: white;
 }
 
-.container .content .more_main_1 .more_btn{
+.container .content .more_main .more_btn{
   font-family: 'Quicksand-Regular';
   line-height: 60px;
   width: 580px;
@@ -137,16 +177,16 @@ header .nav .nav_menu_btn{
 .container.about .header_about{
   border-top: black 0.5px solid;
   font-family: 'Quicksand-Regular';
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 21.6px;
   width:100%;
   padding: 26px 0 30px 0;
 }
 
 .container.about .title_about{
-  font-family: 'NotoSerifKR-Regular';
-  font-size: 50px;
-  line-height: 60px;
+  font-family: 'NotoSerifKR-Bold';
+  font-size: 38px;
+  line-height: 50px;
   padding-bottom:30px;
 
   transform: translate3d(0,5rem,0);
@@ -156,8 +196,8 @@ header .nav .nav_menu_btn{
 
 .container.about .desc_about{
   font-family: 'NotoSerifKR-Regular';
-  font-size: 35px;
-  line-height: 50px;
+  font-size: 30px;
+  line-height: 40px;
   width: 83%;
   text-align: justify;
 
@@ -400,6 +440,13 @@ header .nav .nav_menu_btn{
 .container.interview .interview_items .row .col .item .view{
   font-size:22px;
   line-height: 26.4px;
+  font-family: 'NotoSerifKR-Regular';
+}
+
+.container.interview .interview_items .row .col .item .view .bold{
+  font-size:22px;
+  line-height: 26.4px;
+  font-family: 'NotoSerifKR-Bold';
 }
 
 .container.interview .interview_items .row .col .item .arrow{
