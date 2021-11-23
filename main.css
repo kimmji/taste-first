@@ -311,6 +311,21 @@ header .nav .nav_menu_btn{
   flex-direction: column;
 }
 
+.container.interview .interview_items .row .col .logo_big{
+  height:405px;
+  width:100%;
+  margin-bottom: 30px;
+  background:url('assets/images/logo_big.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container.interview .interview_items .row .col .logo_big:hover{
+  background:url('assets/images/logo_big_reverse.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .container.interview .interview_items .row .col:first-child{
   margin-top: 240px;
 }
@@ -340,6 +355,41 @@ header .nav .nav_menu_btn{
   margin-bottom: 30px;
   font-family: 'NotoSerifKR-Bold';
   justify-content: space-between;
+}
+
+.container.interview .interview_items .row .col .item.item1{
+  background: url('./assets/images/card1.jpg');
+  background-size: cover;
+}
+
+.container.interview .interview_items .row .col .item.item2{
+  background: url('assets/images/card2.jpg');
+  background-size: cover;
+}
+
+.container.interview .interview_items .row .col .item.item3{
+  background: url('assets/images/card3.jpg');
+  background-size: cover;
+}
+
+.container.interview .interview_items .row .col .item.item4{
+  background: url('assets/images/card4.jpg');
+  background-size: cover;
+}
+
+.container.interview .interview_items .row .col .item.item5{
+  background: url('assets/images/card5.jpg');
+  background-size: cover;
+}
+
+.container.interview .interview_items .row .col .item.item6{
+  background: url('assets/images/card6.jpg');
+  background-size: cover;
+}
+
+.container.interview .interview_items .row .col .item.item7{
+  background: url('assets/images/card7.jpg');
+  background-size: cover;
 }
 
 
