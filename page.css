@@ -37,7 +37,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  z-index: 12;
 }
 
 header .logo img{
@@ -74,7 +74,7 @@ header .nav .nav_menu_btn img{
 .container.title{
   display: flex;
   flex-direction: column;
-
+  max-width: none;
   position: relative;
   align-items: center;
   height: 1490px;
@@ -83,14 +83,20 @@ header .nav .nav_menu_btn img{
   min-height: 100%;
   background-position: center;
   background-size: cover;
+  padding:0;
 }
 
-.container.title .page1_title{
+.container.title.page2{
+  background: #fafa64;
+  height: 1400px;
+}
+
+.container.title .page_title{
   margin-top: 150px;
   width:500px;
 }
 
-.container.title .page1_img{
+.container.title .page_img{
   width: 560px; padding-top:65px;
 }
 
@@ -99,6 +105,22 @@ header .nav .nav_menu_btn img{
   font-size: 28px;
   padding-top: 100px;
   line-height: 38px;
+}
+
+.container{
+  max-width: 1300px;
+  padding: 100px 0 0 0;
+  width: 100%;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.container + .container{
+  padding: 80px 0 0 0;
 }
 
 .container.content1{
@@ -119,16 +141,16 @@ header .nav .nav_menu_btn img{
 
 .container .table .left{
   display: inline-block;
-  width: 630px;
+  width: 635px;
   border:0;
   border-top: 1px solid black;
-  margin-right: 28px;
+  margin-right: 30px;
 }
 
 .container .table .right{
   display: inline-block;
   border:0;
-  width: 630px;
+  width: 635px;
   border-top: 1px solid black;
   font-size: 22px;
   line-height: 38px;
@@ -140,10 +162,10 @@ header .nav .nav_menu_btn img{
  border:0 
 }
 
-/* .container .table, */
 .container .table .left .interview_title,
 .container .table .right .interview_title
 {
+  font-family: 'NotoSerifKR-Bold';
   font-size: 35px;
   line-height: 45px;
   color:#c882fa;
@@ -165,6 +187,16 @@ header .nav .nav_menu_btn img{
   line-height: 37px;
   color:black;
 }
+
+.container .table .left .interview_title.p2,
+.container .table .right .interview_title.p2,
+.container .table .left .interview_q.p2,
+.container .table .right .interview_q.p2
+{
+  color:#fafa64;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
 .container .table .left img,
 .container .table .right img{
   width:100%;
@@ -185,7 +217,7 @@ header .nav .nav_menu_btn img{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 630px;
+  width: 635px;
   border-bottom: 1px solid black;
 }
 
@@ -209,7 +241,7 @@ header .nav .nav_menu_btn img{
   min-height: 555px;
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,7 +249,7 @@ header .nav .nav_menu_btn img{
 
 .container.content2{
   max-width: 1300px;
-  height:3672px;
+  height:3472px;
   padding: 100px 0 0 0;
   width: 100%;
   /* display: flex; */
@@ -242,33 +274,36 @@ header .nav .nav_menu_btn img{
   background-size: cover;
 }
 
-.container.content3{
-  max-width: 1300px;
-  height:880px;
-  padding: 0 0 80px 0;
-  width: 100%;
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  z-index: 10;
-  position: relative;
+.parallax3 {
+  /* The image used */
+  /* margin: 100px 0 80px; */
+  background-image: url("./assets/images/page2_img1.png");
+
+  /* Set a specific height */
+  min-height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 100px 0 80px;
 }
 
-.container.content3 .footer_interview{
+.container .footer_interview{
   font-size: 20px;
   line-height: 24px;
-  position: absolute;
+  /* position: absolute; */
   width: 580px;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 80px auto;
   padding: 0 60px;
   bottom: 120px;
   color: black;
 }
 
-.container.content3 .footer_interview .more_btn{
+.container .footer_interview .more_btn{
   font-family: 'NotoSerifKR-Bold';
   line-height: 60px;
   width: 580px;
@@ -301,6 +336,7 @@ footer{
 .footer .container{
   display: flex;
   flex-direction: row;
+  max-width: none;
 }
 
 .footer .container .left{
