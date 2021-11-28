@@ -600,6 +600,7 @@ footer{
   flex-direction: column;
 }
 .footer .container .left .sitemap .col .row{
+  font-family: 'NotoSerifKR-Regular';
   padding-bottom: 30px;
   line-height: 24px;
 }
@@ -621,6 +622,14 @@ footer{
 .footer .container .right .helpers .col{
   width: 33%;
   font-family: 'Quicksand-Regular';
+  font-size: 20px;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .container .right .helpers .col.names{
+  width: 33%;
+  font-family: 'NotoSerifKR-Regular';
   font-size: 20px;
   line-height: 35px;
   display: flex;
@@ -668,8 +677,17 @@ footer{
 
 .footer .container .right .sponsor_icons{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.footer .container .right .sponsor_icons img.woman{
+  width: 213px;
+  margin-right: 90px;
+}
+
+.footer .container .right .sponsor_icons img.butterknife{
+  width: 134px;
 }

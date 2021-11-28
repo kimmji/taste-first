@@ -39,27 +39,27 @@
   <div class="container content1">
     <div class="table">
       <div class="left">
-        <div class="nav">
+        <div class="nav anchor_nav" >
           <div class="num">01</div>
           <div class="title">시작</div>
         </div>
-        <div class="nav">
+        <div class="nav anchor_nav">
           <div class="num">02</div>
           <div class="title">가재와 사랑</div>
         </div>
-        <div class="nav">
+        <div class="nav anchor_nav">
           <div class="num">03</div>
           <div class="title">가재와 촉감</div>
         </div>
-        <div class="nav">
+        <div class="nav anchor_nav">
           <div class="num">04</div>
           <div class="title">가재를 드러내기</div>
         </div>
-        <div class="nav">
+        <div class="nav anchor_nav">
           <div class="num">05</div>
           <div class="title">좋아하는 것과 노동</div>
         </div>
-        <div class="nav">
+        <div class="nav anchor_nav">
           <div class="num">06</div>
           <div class="title">가재의 쓸모와 기쁨</div>
         </div>
@@ -85,7 +85,7 @@
   
       </div>
       <div class="right noborder">
-        <div class="interview_title">시작</div>
+        <div class="interview_title anchor">시작</div>
 
         <div class="interview_q">브랜드는 오픈은 언제부터 구상하신 건가요?</div>
         <div class="interview_a">
@@ -101,7 +101,7 @@
   <div class="container content2">
     <div class="table">
       <div class="left noborder">
-          <div class="interview_title">
+          <div class="interview_title anchor">
             가재와<br/>
             사랑<br/>
           </div>
@@ -120,7 +120,7 @@
           </div>
           <img src="./assets/images/page1_heart1.png" alt="">
 
-          <div class="interview_title">
+          <div class="interview_title anchor">
             가재와<br/>
             촉감<br/>
           </div>
@@ -166,7 +166,7 @@
           </div>
           <img src="./assets/images/page1_heart2.png" alt="">
           <img class='middle2' src="./assets/images/page1_middle2.jpg" alt="">
-          <div class="interview_title">
+          <div class="interview_title anchor">
             가재를<br/>
             드러내기<br/>
           </div>
@@ -192,7 +192,7 @@
         <div class="table">
 
           <div class="left noborder">
-            <div class="interview_title">
+            <div class="interview_title anchor">
               좋아하는 것과<br/>
               노동<br/>
             </div>
@@ -249,14 +249,18 @@
               </div>
               <div class="col">
                 <div class="row">Interviews</div>
-                <div class="row">랍스타룸 유빈</div>
+                <a class="more_btn" href="1">
+                  <div class="row">랍스타룸 유빈</div>
+                </a>
                 <div class="row">오드 스튜디오 서울 주혜</div>
-                <div class="row">포근반짝</div>
-                <div class="row">다정하게</div>
+                <div class="row">포근반짝 수미와 진영</div>
+                <div class="row">다정하게 다정</div>
               </div>
               <div class="col">
                 <div class="row">&nbsp;</div>
-                <div class="row">소목장 세미</div>
+                <a class="more_btn" href="2">
+                  <div class="row">소목장 세미 혜미</div>
+                </a>
                 <div class="row">나이스샵 은하</div>
                 <div class="row">바이부 경민</div>
               </div>
@@ -304,7 +308,29 @@
       </div>
     </footer>
 
+  <script>
+    const anchorNav = document.getElementsByClassName('anchor_nav');
+    const anchor = document.getElementsByClassName('interview_title anchor');
 
+    anchorNav[0].addEventListener('click', () => {
+      window.scrollBy({top: anchor[0].getBoundingClientRect().top, behavior:'smooth'});
+    })
+    anchorNav[1].addEventListener('click', () => {
+      window.scrollBy({top: anchor[1].getBoundingClientRect().top, behavior:'smooth'});
+    })
+    anchorNav[2].addEventListener('click', () => {
+      window.scrollBy({top: anchor[2].getBoundingClientRect().top, behavior:'smooth'});
+    })
+    anchorNav[3].addEventListener('click', () => {
+      window.scrollBy({top: anchor[3].getBoundingClientRect().top, behavior:'smooth'});
+    })
+    anchorNav[4].addEventListener('click', () => {
+      window.scrollBy({top: anchor[4].getBoundingClientRect().top, behavior:'smooth'});
+    })
+    anchorNav[5].addEventListener('click', () => {
+      window.scrollBy({top: anchor[5].getBoundingClientRect().top, behavior:'smooth'});
+    })
+  </script>
 
 
 </body>

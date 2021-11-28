@@ -221,6 +221,10 @@ header .nav .nav_menu_btn img{
   border-bottom: 1px solid black;
 }
 
+.container .left .nav.anchor_nav{
+  cursor: pointer;
+}
+
 .container .left .nav .num{
   font-family: "Quicksand-Bold";
   font-size: 20px;
@@ -380,6 +384,7 @@ footer{
   flex-direction: column;
 }
 .footer .container .left .sitemap .col .row{
+  font-family: 'NotoSerifKR-Regular';
   padding-bottom: 30px;
   line-height: 24px;
 }

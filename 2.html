@@ -38,27 +38,27 @@
   <div class="container">
     <div class="table">
       <div class="left">
-        <div class="nav">
+        <div class="nav anchor_nav">
           <div class="num">01</div>
           <div class="title">워커홀릭</div>
         </div>
-        <div class="nav">
+        <div class="nav anchor_nav">
           <div class="num">02</div>
           <div class="title">타인과 다른 나를 찾기</div>
         </div>
-        <div class="nav">
+        <div class="nav anchor_nav">
           <div class="num">03</div>
           <div class="title">균형잡기</div>
         </div>
-        <div class="nav">
+        <div class="nav anchor_nav">
           <div class="num">04</div>
           <div class="title">저글링</div>
         </div>
-        <div class="nav">
+        <div class="nav anchor_nav">
           <div class="num">05</div>
           <div class="title">여성이라는 위치성</div>
         </div>
-        <div class="nav">
+        <div class="nav anchor_nav">
           <div class="num">06</div>
           <div class="title">불안감</div>
         </div>
@@ -76,7 +76,7 @@
         <img src="./assets/images/page2_img0.jpg" alt="" style="width: 524px;margin: 0;">
       </div>
       <div class="right noborder">
-        <div class="interview_title p2">
+        <div class="interview_title anchor p2">
           워커홀릭
         </div>
 
@@ -104,7 +104,7 @@
     <div class="container">
       <div class="table">
         <div class="left noborder">
-          <div class="interview_title p2">
+          <div class="interview_title anchor p2">
             타인과 다른 <br/>
             나를 찾기<br/>
           </div>
@@ -144,7 +144,7 @@
         <div class="table">
           
           <div class="left noborder">
-            <div class="interview_title p2">
+            <div class="interview_title anchor p2">
               균형잡기<br/><br/>
             </div>
             <div style="height: 630px;overflow: hidden;">
@@ -184,7 +184,7 @@
         <div class="table" style="padding-top:100px;">
 
           <div class="left noborder">
-            <div class="interview_title p2">
+            <div class="interview_title anchor p2">
               저글링<br/>
             </div>
             <div class="interview_q p2">
@@ -214,7 +214,7 @@
             </div>
   
             <div class="right noborder">
-              <div class="interview_title p2">
+              <div class="interview_title anchor p2">
                 여성이라는<br> 
                 위치성
                 <br/>
@@ -236,7 +236,7 @@
         <div class="table" style="padding-top:100px;">
           
           <div class="left noborder">
-            <div class="interview_title p2">
+            <div class="interview_title anchor p2">
               불안감<br/>
             </div>
             <div class="interview_q p2">
@@ -285,14 +285,18 @@
               </div>
               <div class="col">
                 <div class="row">Interviews</div>
-                <div class="row">랍스타룸 유빈</div>
+                <a class="more_btn" href="1.html">
+                  <div class="row">랍스타룸 유빈</div>
+                </a>
                 <div class="row">오드 스튜디오 서울 주혜</div>
                 <div class="row">포근반짝</div>
                 <div class="row">다정하게</div>
               </div>
               <div class="col">
                 <div class="row">&nbsp;</div>
-                <div class="row">소목장 세미</div>
+                <a class="more_btn" href="2.html">
+                  <div class="row">소목장 세미</div>
+                </a>
                 <div class="row">나이스샵 은하</div>
                 <div class="row">바이부 경민</div>
               </div>
@@ -340,8 +344,29 @@
       </div>
     </footer>
 
-
-
+    <script>
+        const anchorNav = document.getElementsByClassName('anchor_nav');
+        const anchor = document.getElementsByClassName('interview_title anchor');
+    
+        anchorNav[0].addEventListener('click', () => {
+          window.scrollBy({top: anchor[0].getBoundingClientRect().top, behavior:'smooth'});
+        })
+        anchorNav[1].addEventListener('click', () => {
+          window.scrollBy({top: anchor[1].getBoundingClientRect().top, behavior:'smooth'});
+        })
+        anchorNav[2].addEventListener('click', () => {
+          window.scrollBy({top: anchor[2].getBoundingClientRect().top, behavior:'smooth'});
+        })
+        anchorNav[3].addEventListener('click', () => {
+          window.scrollBy({top: anchor[3].getBoundingClientRect().top, behavior:'smooth'});
+        })
+        anchorNav[4].addEventListener('click', () => {
+          window.scrollBy({top: anchor[4].getBoundingClientRect().top, behavior:'smooth'});
+        })
+        anchorNav[5].addEventListener('click', () => {
+          window.scrollBy({top: anchor[5].getBoundingClientRect().top, behavior:'smooth'});
+        })
+      </script>
 
 </body>
 </html>
