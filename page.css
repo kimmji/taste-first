@@ -170,6 +170,7 @@ header .nav .nav_menu_btn img{
   line-height: 45px;
   color:#c882fa;
   padding-bottom: 30px;
+  transition: 0.75s;
 }
 
 .container .table .left .interview_q,
@@ -179,6 +180,7 @@ header .nav .nav_menu_btn img{
   line-height: 37px;
   color:#c882fa;
   /* padding-bottom: 20px; */
+  transition: 0.75s;
 }
 
 .container .table .left .interview_a,
@@ -186,6 +188,7 @@ header .nav .nav_menu_btn img{
   font-size: 22px;
   line-height: 37px;
   color:black;
+  transition: 0.75s;
 }
 
 .container .table .left .interview_title.p2,
@@ -266,7 +269,7 @@ header .nav .nav_menu_btn img{
 .parallax2 {
   /* The image used */
   /* margin: 100px 0 80px; */
-  background-image: url("./assets/images/page1_middle.jpg");
+  background-image: url("./assets/images/page1_middle.png");
 
   /* Set a specific height */
   min-height: 800px;

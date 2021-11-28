@@ -165,7 +165,7 @@
             개수는 모르겠어요. 계획하고 산 게 아니라서. 그리고 요즘은 자꾸 주변에서 랍스터 관련된 사진이나 물품을 많이 보내줘요. 길 가다가 봤는데 너 생각이 났다면서.
           </div>
           <img src="./assets/images/page1_heart2.png" alt="">
-          <img class='middle2' src="./assets/images/page1_middle2.jpg" alt="">
+          <img class='middle2' src="./assets/images/page1_middle2.png" alt="">
           <div class="interview_title anchor">
             가재를<br/>
             드러내기<br/>
@@ -312,8 +312,9 @@
     
       </div>
     </footer>
-    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script>
+    
     const anchorNav = document.getElementsByClassName('anchor_nav');
     const anchor = document.getElementsByClassName('interview_title anchor');
 
@@ -335,6 +336,37 @@
     anchorNav[5].addEventListener('click', () => {
       window.scrollBy({top: anchor[5].getBoundingClientRect().top, behavior:'smooth'});
     })
+
+    //글자 나타나는 효과
+    let height = window.innerHeight
+    $(document).ready(function(){ 
+      $(window).scroll(function(){ 
+        //초기화
+        if($(window).scrollTop() < height){
+          $('.interview_title').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
+          $('.interview_q').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
+          $('.interview_a').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
+        }
+
+        for (let i = 0; i < $('.interview_title').length; i++) {
+          if($('.interview_title').eq(i).offset().top < $(window).scrollTop() + height - 200){
+            $('.interview_title').eq(i).css("opacity", 1).css("transform","translateZ(0)");
+          }
+        }
+
+        for (let i = 0; i < $('.interview_q').length; i++) {
+          if($('.interview_q').eq(i).offset().top < $(window).scrollTop() + height - 200){
+            $('.interview_q').eq(i).css("opacity", 1).css("transform","translateZ(0)");
+          }
+        }
+
+        for (let i = 0; i < $('.interview_a').length; i++) {
+          if($('.interview_a').eq(i).offset().top < $(window).scrollTop() + height - 200){
+            $('.interview_a').eq(i).css("opacity", 1).css("transform","translateZ(0)");
+          }
+        }
+      }) 
+    }) 
   </script>
 
 

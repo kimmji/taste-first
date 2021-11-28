@@ -348,7 +348,7 @@
     
       </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         const anchorNav = document.getElementsByClassName('anchor_nav');
         const anchor = document.getElementsByClassName('interview_title anchor');
@@ -371,6 +371,37 @@
         anchorNav[5].addEventListener('click', () => {
           window.scrollBy({top: anchor[5].getBoundingClientRect().top, behavior:'smooth'});
         })
+
+        //글자 나타나는 효과
+    let height = window.innerHeight
+    $(document).ready(function(){ 
+      $(window).scroll(function(){ 
+        //초기화
+        if($(window).scrollTop() < height){
+          $('.interview_title').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
+          $('.interview_q').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
+          $('.interview_a').css("opacity", 0).css("transform","translate3d(0,5rem,0)");
+        }
+
+        for (let i = 0; i < $('.interview_title').length; i++) {
+          if($('.interview_title').eq(i).offset().top < $(window).scrollTop() + height - 200){
+            $('.interview_title').eq(i).css("opacity", 1).css("transform","translateZ(0)");
+          }
+        }
+
+        for (let i = 0; i < $('.interview_q').length; i++) {
+          if($('.interview_q').eq(i).offset().top < $(window).scrollTop() + height - 200){
+            $('.interview_q').eq(i).css("opacity", 1).css("transform","translateZ(0)");
+          }
+        }
+
+        for (let i = 0; i < $('.interview_a').length; i++) {
+          if($('.interview_a').eq(i).offset().top < $(window).scrollTop() + height - 200){
+            $('.interview_a').eq(i).css("opacity", 1).css("transform","translateZ(0)");
+          }
+        }
+      }) 
+    }) 
       </script>
 
 </body>
