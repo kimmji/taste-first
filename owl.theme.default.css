@@ -48,15 +48,46 @@
     *display: inline; }
     .owl-theme .owl-dots .owl-dot span {
       width: 30px;
-      height: 2px;
+      height: 23.24px;
       margin: 0 30px 0 0;
-      background: #959595;
+      background: url(./assets/images/heart_basic.png);
+      background-size: cover;
       opacity: 0.6;
       display: block;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease;
     }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: #969696; 
+      background-size: cover;
       opacity: 1;
+    }
+
+    .owl-theme .owl-dots button:first-child.owl-dot.active span, .owl-theme .owl-dots button:first-child.owl-dot:hover span {
+      background: url(./assets/images/heart_1.png);
+      background-size: cover;
+    }
+
+    .owl-theme .owl-dots button:nth-child(2).owl-dot.active span, .owl-theme .owl-dots button:nth-child(2).owl-dot:hover span {
+      background: url(./assets/images/heart_2.png);
+      background-size: cover;
+    }
+    .owl-theme .owl-dots button:nth-child(3).owl-dot.active span, .owl-theme .owl-dots button:nth-child(3).owl-dot:hover span {
+      background: url(./assets/images/heart_3.png);
+      background-size: cover;
+    }
+    .owl-theme .owl-dots button:nth-child(4).owl-dot.active span, .owl-theme .owl-dots button:nth-child(4).owl-dot:hover span {
+      background: url(./assets/images/heart_4.png);
+      background-size: cover;
+    }
+    .owl-theme .owl-dots button:nth-child(5).owl-dot.active span, .owl-theme .owl-dots button:nth-child(5).owl-dot:hover span {
+      background: url(./assets/images/heart_5.png);
+      background-size: cover;
+    }
+    .owl-theme .owl-dots button:nth-child(6).owl-dot.active span, .owl-theme .owl-dots button:nth-child(6).owl-dot:hover span {
+      background: url(./assets/images/heart_6.png);
+      background-size: cover;
+    }
+    .owl-theme .owl-dots button:nth-child(7).owl-dot.active span, .owl-theme .owl-dots button:nth-child(7).owl-dot:hover span {
+      background: url(./assets/images/heart_7.png);
+      background-size: cover;
     }
