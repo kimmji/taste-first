@@ -669,10 +669,14 @@ footer{
 
 .footer .container .left .copyright .l{
   width:51%;
+  display: flex;
+  align-items: end;
 }
 
 .footer .container .left .copyright .r{
   width:38%;
+  display: flex;
+  align-items: end;
 }
 
 .footer .container .left .copyright .instagram{
