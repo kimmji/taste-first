@@ -169,7 +169,7 @@ header .nav .nav_menu_btn{
   height: 100vh;
   max-width: 1920px;
   /* min-width: 1280px; */
-  min-height: 1080px;
+  /* min-height: 1080px; */
   width: 100%;
   left: 0;
   right: 0;
@@ -708,4 +708,14 @@ footer{
 
 .footer .container .right .sponsor_icons img.butterknife{
   width: 134px;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer .container .right .sponsor_icons img.woman{
+    display: none;
+  }
+  
+  .footer .container .right .sponsor_icons img.butterknife{
+    display: none;
+  }
 }

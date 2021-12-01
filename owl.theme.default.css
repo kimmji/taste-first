@@ -95,6 +95,7 @@
 
     @media screen and (max-width: 1280px) {
       .owl-theme .owl-dots {
-        display:none;
+        /* display:none; */
+        bottom: -40px;
       }
     }
