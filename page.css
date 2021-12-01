@@ -230,6 +230,7 @@ header .nav .nav_menu_btn img{
   line-height: 37px;
   color:black;
   transition: 0.75s;
+  padding-top:20px;
 }
 
 .container .table .left .interview_title.p2,
@@ -254,7 +255,7 @@ header .nav .nav_menu_btn img{
 }
 .container .table.heart img{
   position: absolute;
-  top:0;
+  top:20px;
   left:50%; 
   transform:translateX(-50%);
   width:635px;

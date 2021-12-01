@@ -31,6 +31,7 @@
   margin-top: 10px; } */
 
 .owl-theme .owl-dots {
+  
   text-align: right;
   position: absolute;
   left: 0;
@@ -90,4 +91,10 @@
     .owl-theme .owl-dots button:nth-child(7).owl-dot.active span, .owl-theme .owl-dots button:nth-child(7).owl-dot:hover span {
       background: url(./assets/images/heart_7.png);
       background-size: cover;
+    }
+
+    @media screen and (min-width: 900px) {
+      .owl-theme .owl-dots {
+        display:none;
+      }
     }
