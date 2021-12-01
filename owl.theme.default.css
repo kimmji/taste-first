@@ -93,7 +93,7 @@
       background-size: cover;
     }
 
-    @media screen and (min-width: 900px) {
+    @media screen and (max-width: 1280px) {
       .owl-theme .owl-dots {
         display:none;
       }

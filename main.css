@@ -29,6 +29,7 @@ a {
 header{
   position: absolute;
   max-width: 1920px;
+  min-width: 1280px;
   width: 100%;
   left: 0;
   right: 0;
@@ -124,6 +125,7 @@ header .nav .nav_menu_btn{
   font-family: 'NotoSerifKR-Bold';
   position: absolute;
   max-width: 1920px;
+  min-width: 1280px;
   width: 100%;
   left: 0;
   right: 0;
@@ -140,6 +142,7 @@ header .nav .nav_menu_btn{
   line-height: 24px;
   position: absolute;
   max-width: 1920px;
+  min-width: 1280px;
   width: 100%;
   left: 0;
   right: 0;

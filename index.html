@@ -419,6 +419,21 @@
         margin:10,
         // autoplay:true,
         autoplayTimeout:5000,
+        responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:false,
+            loop:false
+        }
+    }
       });
     });
     const navAbout = document.getElementsByClassName('nav_about');
