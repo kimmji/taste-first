@@ -596,3 +596,15 @@ footer{
 .footer .container .right .sponsor_icons img.butterknife{
   width: 134px;
 }
+
+
+@media screen and (max-width: 1280px) {
+
+  .footer .container .right .sponsor_icons img.woman{
+    display: none;
+  }
+  
+  .footer .container .right .sponsor_icons img.butterknife{
+    display: none;
+  }
+}
