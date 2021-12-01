@@ -29,7 +29,7 @@ a {
 header{
   position: absolute;
   max-width: 1920px;
-  min-width: 1280px;
+  /* min-width: 1280px; */
   width: 100%;
   left: 0;
   right: 0;
@@ -125,7 +125,7 @@ header .nav .nav_menu_btn{
   font-family: 'NotoSerifKR-Bold';
   position: absolute;
   max-width: 1920px;
-  min-width: 1280px;
+  /* min-width: 1280px; */
   width: 100%;
   left: 0;
   right: 0;
@@ -142,7 +142,7 @@ header .nav .nav_menu_btn{
   line-height: 24px;
   position: absolute;
   max-width: 1920px;
-  min-width: 1280px;
+  /* min-width: 1280px; */
   width: 100%;
   left: 0;
   right: 0;
@@ -168,7 +168,7 @@ header .nav .nav_menu_btn{
   position:relative;
   height: 100vh;
   max-width: 1920px;
-  min-width: 1280px;
+  /* min-width: 1280px; */
   min-height: 1080px;
   width: 100%;
   left: 0;
@@ -285,7 +285,7 @@ header .nav .nav_menu_btn{
   position:relative;
   height: 2155px;
   max-width: 1920px;
-  min-width: 1280px;
+  /* min-width: 1280px; */
   width: 100%;
   left: 0;
   right: 0;
@@ -551,7 +551,7 @@ footer{
   height: 720px;
   width: 100%;
   max-width: 1920px;
-  min-width: 1280px;
+  /* min-width: 1280px; */
   left: 0;
   right: 0;
   margin: 0 auto;
