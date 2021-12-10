@@ -107,6 +107,10 @@ header .nav .nav_menu_btn img{
   height: 1440px;
 }
 
+.container.title.page6{
+  background: #faa032;
+  height: 1369px;;
+}
 
 .container.title .page_title{
   margin-top: 150px;
@@ -261,6 +265,11 @@ header .nav .nav_menu_btn img{
   padding:0 0 50px 0;
 }
 
+.container .table .left .interview_a .bold,
+.container .table .right .interview_a .bold{
+  font-family: 'NotoSerifKR-Bold';
+}
+
 .container .table .right .interview_a +.container .table .right .interview_a{
   padding-top: 0;
 }
@@ -295,6 +304,13 @@ header .nav .nav_menu_btn img{
 .container .table .right .interview_q.p5{
   color:#8cfa64;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.container .table .left .interview_title.p6,
+.container .table .right .interview_title.p6,
+.container .table .left .interview_q.p6,
+.container .table .right .interview_q.p6{
+  color:#faa032;
 }
 
 .container .table.heart{
