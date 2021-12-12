@@ -112,6 +112,12 @@ header .nav .nav_menu_btn img{
   height: 1369px;;
 }
 
+.container.title.page7{
+  background: #78b4fa;
+  height: 1400px;
+}
+
+
 .container.title .page_title{
   margin-top: 150px;
   width:500px;
@@ -120,6 +126,11 @@ header .nav .nav_menu_btn img{
 .container.title .page_title .p3{
   margin-top: 150px;
   width:470px;
+}
+
+.container.title .page_title.p7{
+  margin-top: 150px;
+  width:300px;
 }
 
 .container.title .page_img{
@@ -313,6 +324,13 @@ header .nav .nav_menu_btn img{
   color:#faa032;
 }
 
+.container .table .left .interview_title.p7,
+.container .table .right .interview_title.p7,
+.container .table .left .interview_q.p7,
+.container .table .right .interview_q.p7{
+  color:#78b4fa;
+}
+
 .container .table.heart{
   position: relative;
 }
@@ -486,6 +504,22 @@ header .nav .nav_menu_btn img{
   /* The image used */
   /* margin: 100px 0 80px; */
   background-image: url("./assets/images/page4_img4.png");
+
+  /* Set a specific height */
+  min-height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 100px 0 0;
+}
+
+.parallax6 {
+  /* The image used */
+  /* margin: 100px 0 80px; */
+  background-image: url("./assets/images/page7_img4.png");
 
   /* Set a specific height */
   min-height: 800px;
