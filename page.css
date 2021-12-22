@@ -163,7 +163,7 @@ header .nav .nav_menu_btn img{
 
 .container.content1{
   max-width: 1300px;
-  height:2075px;
+  /* height:2075px; */
   padding: 100px 0 80px 0;
   width: 100%;
   /* display: flex; */
@@ -426,24 +426,9 @@ header .nav .nav_menu_btn img{
   line-height: 42px;
 }
 
-.container.content1 .parallax {
-  /* The image used */
-  margin: 100px 0 80px;
-  background-image: url("./assets/images/main1.jpg");
-
-  /* Set a specific height */
-  min-height: 555px;
-
-  /* Create the parallax scrolling effect */
-  /* background-attachment: fixed; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .container.content2{
   max-width: 1300px;
-  height:3472px;
+  /* height:3472px; */
   padding: 100px 0 0 0;
   width: 100%;
   /* display: flex; */
@@ -554,4 +539,17 @@ header .nav .nav_menu_btn img{
   justify-content: space-between;
   cursor: pointer;
   border-bottom: black 0.5px solid;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  
+  .parallax2,
+  .parallax3,
+  .parallax4,
+  .parallax5,
+  .parallax6 {
+    background-attachment: unset;
+  }
 }
